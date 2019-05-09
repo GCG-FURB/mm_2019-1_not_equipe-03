@@ -5,11 +5,11 @@ using Leap;
 
 public class Drawaline : MonoBehaviour
 {
-    public GameObject trail;
+    public TrailRenderer trail;
 
     public GameObject Finger;
 
-    public GameObject CurrentTrail;
+    public TrailRenderer CurrentTrail;
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +25,11 @@ public class Drawaline : MonoBehaviour
 
     public void StopDraw()
     {
+        Vector3[] venctors = new Vector3[this.CurrentTrail.positionCount];
+        this.CurrentTrail.GetPositions(venctors);
+        
+        
+        Debug.Log(venctors);
         StopAllCoroutines();
     }
 

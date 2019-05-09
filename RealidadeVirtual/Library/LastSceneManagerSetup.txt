@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/RealidadeVirtual/Scenes/Pc_Write.unity
+- path: Assets/RealidadeVirtual/Scenes/Paint.unity
   isLoaded: 1
   isActive: 1
